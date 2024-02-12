@@ -131,10 +131,10 @@
 //опероператор або ||
 
 
-const burger = true;
-const cola = false;
+const burger2 = true;
+const cola2 = false;
 
-if (burger || cola) {
+if (burger2 || cola2) {
 console.log("lets have a break!");
 } else {
 console.log("Error");
