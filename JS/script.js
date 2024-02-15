@@ -131,11 +131,55 @@
 //опероператор або ||
 
 
-const burger2 = true;
-const cola2 = false;
+// const burger2 = true;
+// const cola2 = false;
 
-if (burger2 || cola2) {
-console.log("lets have a break!");
-} else {
-console.log("Error");
-}
+// if (burger2 || cola2) {
+// console.log("lets have a break!");
+// } else {
+// console.log("Error");
+// }
+
+//15.02.2024
+// Задача 1: Перевірка на парність числа
+// let imputNumber = prompt("Введіть будь-яке число:");
+// if (imputNumber % 2 === 0) {
+//     console.log("Введене число " + imputNumber + " є парним.");
+// } else {
+//     console.log("Введене число " + imputNumber + " є непарним.");
+// }
+
+
+// Задача 2: Порівняння двох чисел
+// let num1 = prompt("Введіть перше число:");
+// let num2 = prompt("Введіть друге число:");
+// if (num1 > num2) {
+//     console.log(" Перше число найбільше = " + num1);
+// } else if (num1 < num2) {
+//     console.log(" Друге число найбільше = " + num2);
+// } else {
+//     console.log(" Числа є рівними! ");
+// }
+
+// Задача 3: Перевірка на дорослість
+// let userAge = prompt(" Скільки вам років? ");
+
+// if (userAge >= 18) {
+//     console.log(" Вам вже є 18 років ");
+// } else {
+//     console.log(" Вам немає 18 років! ");
+// }
+
+
+// Задача 4: Перевірка логіна та пароля
+// let validLogin = prompt("Введіть ваш логін:");
+// let validPassword = prompt("Введіть ваш пароль:");
+// if (validLogin === "user123" && validPassword === "qwerty") {
+//     console.log(" Ласкаво просимо на наш сайт! ");
+// } else {
+//     console.log(" Невірний логін або пароль! ");
+// }
+
+
+
+
