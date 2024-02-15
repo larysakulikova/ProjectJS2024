@@ -151,18 +151,20 @@
 
 
 // Задача 2: Порівняння двох чисел
-// let num1 = prompt("Введіть перше число:");
-// let num2 = prompt("Введіть друге число:");
+// let num1 = +prompt("Введіть перше число:");
+// let num2 = +prompt("Введіть друге число:");
 // if (num1 > num2) {
 //     console.log(" Перше число найбільше = " + num1);
 // } else if (num1 < num2) {
 //     console.log(" Друге число найбільше = " + num2);
-// } else {
+// } else if (num1 === num2) {
 //     console.log(" Числа є рівними! ");
+// } else {
+//     console.log("Error");
 // }
 
 // Задача 3: Перевірка на дорослість
-// let userAge = prompt(" Скільки вам років? ");
+// let userAge = +prompt(" Скільки вам років? ", " ");
 
 // if (userAge >= 18) {
 //     console.log(" Вам вже є 18 років ");
