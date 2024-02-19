@@ -1,224 +1,90 @@
-// let text = ";alskjdfkasjdfjaklsjd;fja;sljdf;ajsdjfl;asdjflaskjdfl;kasjblvj nclxjzg.jdf,f";
-// const numbers = 123424343;
-// alert("text");
-// let text = "sldjfa;ldj;lafs" //"" - type of data = text
-// window.alert("our first js lesson")
+//Випадок - 1
+//let num = 50;
 
-// let firstNum = 4.4;
-// console.log(typeof(firstNum));
-// console.log(typeof("Hello"));
-
-// let und;
-// console.log(typeof(und));
-
-// let man = true;
-// console.log(typeof(man));
-
-// console.log(typeof(4/"0"));
-
-// let storeName = "Good Shop";
-// const storeDescription = {
-//     budget: 10000,
-//     employees: ["Первенко", "Вторенко", "Тритенко"],
-//     products: {
-//         pen: 30,
-//         note: 15
-//     },
-//     isOpen: true
-// };
-// console.log(storeDescription.employees[1]);
-
-// const employee = {};
-// employee.name = "Anna";
-// employee.age = 25,
-// employee.isMarried = true,
-// employee.mainDuty = ["developer", "designer", "translator"];
-// employee.data = {
-//         height: 175,
-//         weight: 55,
-//         isStudent: true
-//     };
-// console.log(employee);
-
-
-// let numberOfFilms = prompt("Скільки фільмів ви вже подивились?", "");
-// console.log(numberOfFilms);
-
-
-// const personalMovieDB = {
-// count: numberOfFilms,
-// movies: {},
-// actors: {},
-// genres: [],
-// privat: false
-// }
-// console.log(personalMovieDB)
-
-// let a = prompt("Один з останніх фільмів:" , "");
-// let b = prompt("На скільки оцінете його?" , "");
-// let c = prompt("Один з останніх фільмів:" , "");
-// let d = prompt("На скільки оцінете його?" , "");
-
-// personalMovieDB.movies[a] = b;
-// personalMovieDB.movies[c] = d;
-// // personalMovieDB.movies.hello = d;
-
-// console.log(personalMovieDB);
-
-
-// if (1) {
-//     console.log ("Ok!");
-// } else {
-//     console.log ("Good bye!");
+// while(num <= 55) {
+//     console.log(num);
+//     num++
 // }
 
-// const num = 101;
 
-// if (num <= 50) {
-//     console.log("Error!");
-// } else if (num > 100) {
-//     console.log("Too much!");
-// } else {
-//     console.log("OK!");
+//Випадок - 2
+// do {
+//     console.log(num);
+//     num++
+// }
+// while(num < 60);
+
+// for(let i = 1; i < 8; i++)
+// console.log(i);
+
+
+//Випадок - Викидуємо вихідні 6 та 7
+// for(let i = 1; i <= 28; i++) {
+//     if (i === 6 || i === 7){
+//         continue;
+//     }
+//     console.log(i);
 // }
 
-//тернальний оператор
+//Випадок - Цикл  в циклі
+// for (let i = 1; i <= 3; i++){
+//     console.log("Тренування номер" ${i});
+//     for (let j = 1; i <= 3; j++){
+//         console.log("j спрацювало" ${j} "разів");
+//     }
+// }
 
-// умова дія, якщо true : дія, якщо false
 
-// (num === 50) ? console.log("Okay") : console.log("Error!");
+//ПЕревірити!!!
+// let result = '';
+// const length = 8;
+// for(let i = 1; i < length; i++) {
+//     for(let j = 0; j < i; j++){
+//     result += '*';
+// }
+// result += '\n';
+// }
 
-// const num = 101;
-// switch (num) {
-//     case 49:
-//         console.log("Error!");
+
+//Cамостійна робота
+//Завдання 1
+// let num = 5;
+// while(num <= 10) {
+//     console.log(num);
+//     num++
+// }
+
+//Завдання 2
+// for(let i = 20; i > 10; i--) {
+//     if (i === 13)
 //         break;
-//     case 100:
-//         console.log("Not enough!");
-//         break;
-//     case 101:
-//         console.log("Great!");
-//         break;
-//     default:
-//         console.log("Not at this time!");
-//         break;
+//     console.log(i);
 // }
 
 
-// const burger = true;
-// const cola = true;
-// const salad = false;
-
-// //&& - оператор і
-
-
-
-// if (burger && cola && salad) {
-//     console.log("Lets have a break!");
-// } else {
-//     console.log("continue...");
+//Завдання 3
+// let num = 2;
+// while(num <= 10) {
+//     console.log(num);
+//     num = num + 2
 // }
 
-// const burger = true;
-// const cola = false;
-
-// if (burger && cola) {
-//     console.log("Lets have a break!");
-// } else {
-//     console.log((burger && cola));
+//Завдання 4 (умова)
+// for(let i = 2; i <= 16; i++) {
+//     if (i%2 === 0) {
+//         continue;
+//     } else {
+//         console.log(i);
+//     }
 // }
-
-//опероператор або ||
-
-
-// const burger2 = true;
-// const cola2 = false;
-
-// if (burger2 || cola2) {
-// console.log("lets have a break!");
-// } else {
-// console.log("Error");
-// }
-
-//15.02.2024
-// Задача 1: Перевірка на парність числа
-// let imputNumber = prompt("Введіть будь-яке число:");
-// if (imputNumber % 2 === 0) {
-//     console.log("Введене число " + imputNumber + " є парним.");
-// } else {
-//     console.log("Введене число " + imputNumber + " є непарним.");
-// }
-
-
-// Задача 2: Порівняння двох чисел
-// let num1 = +prompt("Введіть перше число:");
-// let num2 = +prompt("Введіть друге число:");
-// if (num1 > num2) {
-//     console.log(" Перше число найбільше = " + num1);
-// } else if (num1 < num2) {
-//     console.log(" Друге число найбільше = " + num2);
-// } else if (num1 === num2) {
-//     console.log(" Числа є рівними! ");
-// } else {
-//     console.log("Error");
-// }
-
-// Задача 3: Перевірка на дорослість
-// let userAge = +prompt(" Скільки вам років? ", " ");
-
-// if (userAge >= 18) {
-//     console.log(" Вам вже є 18 років ");
-// } else {
-//     console.log(" Вам немає 18 років! ");
-// }
-
-
-// Задача 4: Перевірка логіна та пароля
-// let validLogin = prompt("Введіть ваш логін:");
-// let validPassword = prompt("Введіть ваш пароль:");
-// if (validLogin === "user123" && validPassword === "qwerty") {
-//     console.log(" Ласкаво просимо на наш сайт! ");
-// } else {
-//     console.log(" Невірний логін або пароль! ");
-// }
-
-
-// Задача 7: Визначення дня тижня (через масив)
-// var dayNum = +prompt("Введіть номер дня тижня (від 1 до 7):", " ");
-
-// if (dayNum >= 1 && dayNum <= 7) {
-//     var dayWeek = ["понеділок", "вівторок", "середа", "четвер", "п'ятниця", "субота", "неділя"];
-
-//     // parseInt - перетворення введеного номера в число
-//     alert("Сьогодні " + dayWeek[parseInt(dayNum) - 1] + "!"); 
-// } else {
-//     alert("Введіть коректний номер дня тижня від 1 до 7!");
-// }
-
-
-// const a = 3;
-// const b = 1;
-// const c = 0;
-
-// if (a === 3 && b === 1 && c) {
-//     console.log("Поїли");
-// } else {
-//     console.log("Пішли додому");
-// }
-
-
-// const hamburger = 0;
-// const fries = undefined;
-// const cola = 2;
-// const nuggets = 5;
-
-
-// if (hamburger === 0 && nuggets === 5 && cola || nuggets  && cola === 1 && fries)  {
-//     console.log('Поїли!');
-// } else {
-//     console.log('Пішли додому!');
-// }
-
-
-
-
+//Рішення - завдання 4
+let i = 2;
+while (i <= 16) {
+    if(i%2 === 0) {
+        i++;
+        continue;
+    } else {
+        console.log(i)
+    }
+    i++;
+}
